@@ -7,7 +7,7 @@ class UserClient:
 
     def __init__(self):
         dotenv.load_dotenv()
-        self.users_endpoint = f'{os.getenv("ENDPOINT")}/users'
+        self.users_endpoint = f'{os.getenv("ENDPOINT")}/api/users'
         self.token = ""
 
     def login(self) -> str:

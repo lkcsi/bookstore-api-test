@@ -7,7 +7,7 @@ class BookClient:
 
     def __init__(self):
         dotenv.load_dotenv()
-        self.books_endpoint = f'{os.getenv("ENDPOINT")}/books'
+        self.books_endpoint = f'{os.getenv("ENDPOINT")}/api/books'
 
     def create(self, token, payload: dict) -> Response:
         return post(
